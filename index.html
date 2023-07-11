@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+    <title>Sacred Heart Primary School</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="School, Sacred,Heart" name="keywords">
+    <meta content="Sacred Heart International School" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Animate Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.css" />
+    
+    <!-- Image Grid Stylesheet -->
+    <link rel="stylesheet" href="css/grid_image.css" />
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-fixed position-sticky  shadow" style="top: 0;
+      background-color: rgb(31, 30, 112);
+        transition: background-color 0.3s ease;
+        background-color: rgb(31, 30, 112); 
+        z-index: 9999;
+      ">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
+                
+                <span class="text-primary"><img src="img/logo.jpg" class="logo"></span>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link navs active animate__animated animate__bounce">Home</a>
+                    <a href="about.html" class="nav-item nav-link animate__animated animate__bounce">About Us</a>
+                    <a href="management.html" class="nav-item nav-link animate__animated animate__bounce">Management</a>
+                    <div class="nav-item ">
+                        <a href="blog.html" class="nav-link animate__animated animate__bounce">News & Event</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            
+                        </div>
+                    </div>
+                    <a href="gallery.html" class="nav-item nav-link animate__animated animate__bounce">Gallery</a>
+                    <a href="contact.html" class="nav-item nav-link animate__animated animate__bounce">Contact</a>
+                
+        </nav>
+    </div>
+    <!-- Navbar End -->
+<!-- Header Start -->
+<div class="container-fluid px-0 px-md-5 mb-5" style="background-color: rgb(31, 30, 112);">
+    <div class="row align-items-center px-3">
+        <div class="col-lg-6 text-center text-sm-left">
+            <h4 class="text-white mb-4 mt-5 mt-sm-0"></h4>
+            <h1 class="display-3 font-weight-xsmall text-white animate__animated animate__backInLeft " id="headerText">Sacred Heart <br>International School</h1>
+            <p class="text-white mb-4 animate__animated animate__backInRight"><strong class="container reveal fade-left">OUR VISION </strong >is to build a community where all children feel loved,
+                <br>respected and encouraged to develop to their fullest potentials. <br></p>
+            <a href="gallery.html"><button class="Btn animate_animated animate_woggle">
+                More photos
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>
+            </button></a>
+        </div>
+        <div class="col-lg-6 text-center text-lg-right img-hold">
+            <img class="img-fluid mt-5 animate__animated animate__fadeIn" src="img/img2.jpg" alt="" id="img1">
+        </div>
+    </div>
+</div>
+
+<!-- Pop Welcome MEssage -->
+<div id="popup-container">
+    <div id="popup-message">
+        <img src="img/logo2.png" alt="" >
+      <h2>Welcome to our Sacred Heart <br> Primary School<br> Kaduna</h2>
+      <p><q>Where Learning Never Ends </q></p>
+    </div>
+  </div>
+
+<!-- Header End -->
+
+<script>
+    window.addEventListener("scroll", function() {
+        var headerText = document.getElementById("headerText");
+        var img1 = document.getElementById("img1");
+
+        var headerPosition = headerText.getBoundingClientRect().top;
+        var imgPosition = img1.getBoundingClientRect().top;
+
+        var screenHeight = window.innerHeight;
+
+        if (headerPosition < screenHeight) {
+            headerText.classList.add("animate__backInLeft");
+        }
+        if (imgPosition < screenHeight) {
+            img1.classList.add("animate__fadeIn");
+        }
+    });
+</script>
+
+<!-- Grid-image section -->
+        <h5 style="width: 51.792px;
+        height: 52.729px;
+        padding-top: 20px;
+        transform: rotate(-90deg);
+        flex-shrink: 0;"><svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="26.4093" cy="25.8695" rx="25.8688" ry="26.3194" transform="rotate(-90 26.4093 25.8695)" fill="#3E4094"/>
+  <mask id="mask0_128_1261" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="53" height="52">
+    <ellipse cx="26.3194" cy="25.9242" rx="25.8687" ry="26.3194" transform="rotate(-90 26.3194 25.9242)" fill="#C4C4C4"/>
+  </mask>
+  <g mask="url(#mask0_128_1261)">
+    <rect width="31.3151" height="2.08767" rx="1.04384" transform="matrix(-0.713186 -0.700975 0.713186 -0.700975 20.3867 53.7168)" fill="white"/>
+    <rect width="31.3151" height="2.08767" rx="1.04384" transform="matrix(0.713186 0.700975 -0.713186 0.700975 32.1797 -2.00195)" fill="white"/>
+    <rect width="41.7521" height="2.0876" rx="1.0438" transform="matrix(-0.713186 -0.700975 0.713186 -0.700975 27.0859 54.4492)" fill="white"/>
+    <rect width="41.7521" height="2.0876" rx="1.0438" transform="matrix(0.713186 0.700975 -0.713186 0.700975 25.5039 -2.71094)" fill="white"/>
+    <rect width="49.0587" height="2.0876" rx="1.0438" transform="matrix(-0.713186 -0.700975 0.713186 -0.700975 33.0391 54.4492)" fill="white"/>
+    <rect width="49.0587" height="2.0876" rx="1.0438" transform="matrix(0.713186 0.700975 -0.713186 0.700975 19.5684 -2.68555)" fill="white"/>
+    <rect width="56.3653" height="2.0876" rx="1.0438" transform="matrix(-0.713186 -0.700975 0.713186 -0.700975 38.9961 54.4492)" fill="white"/>
+    <rect width="56.3653" height="2.0876" rx="1.0438" transform="matrix(0.713186 0.700975 -0.713186 0.700975 13.6309 -2.66211)" fill="white"/>
+    <rect width="56.3653" height="2.0876" rx="1.0438" transform="matrix(-0.713186 -0.700975 0.713186 -0.700975 41.9727 51.5234)" fill="white"/>
+    <rect width="56.3653" height="2.0876" rx="1.0438" transform="matrix(0.713186 0.700975 -0.713186 0.700975 10.6777 0.289062)" fill="white"/>
+    <rect width="56.3653" height="2.0876" rx="1.0438" transform="matrix(-0.713186 -0.700975 0.713186 -0.700975 44.209 47.8633)" fill="white"/>
+    <rect width="56.3653" height="2.0876" rx="1.0438" transform="matrix(0.713186 0.700975 -0.713186 0.700975 8.47852 3.96484)" fill="white"/>
+  </g>
+</svg></h5><h4 class="animate__animated animate__lightSpeedInRight container reveal fade-left">Our Gallery</h4>
+        <div id="gallery" class="container reveal fade-bottom">
+            <div><img src="img/img1 - Copy.jpg" height=""/><a href="#lightbox-2">Welcome To</a></div>
+            <div><img src="img/img10.jpg"/><a href="#lightbox-3">Sacred Heart</a></div>
+            <div><img src="img/img6.jpg"/><a href="#lightbox-4">Primary</a></div>
+            <div><img src="img/img9.jpg"/><a href="#lightbox-5">School</a></div>
+            <div><img src="img/img7.jpg"/><a href="#lightbox-6">Kaduna</a></div>
+          </div>
+          <div class="lightbox" id="lightbox-2">
+            <div class="content"><img src="img/img1 - Copy.jpg"/>
+              <div class="title">No. <b>513</b> from Picsum</div><a class="close" href="#gallery"></a>
+            </div>
+          </div>
+          <div class="lightbox" id="lightbox-3">
+            <div class="content"><img src="img/img10.jpg"/>
+              <div class="title">No. <b>514</b> from Picsum</div><a class="close" href="#gallery"></a>
+            </div>
+          </div>
+          <div class="lightbox" id="lightbox-4">
+            <div class="content"><img src="img/img6.jpg"/>
+              <div class="title">No. <b>515</b> from Picsum</div><a class="close" href="#gallery"></a>
+            </div>
+          </div>
+          <div class="lightbox" id="lightbox-5">
+            <div class="content"><img src="img/img9.jpg"/>
+              <div class="title">No. <b>516</b> from Picsum</div><a class="close" href="#gallery"></a>
+            </div>
+          </div>
+          <div class="lightbox" id="lightbox-6">
+            <div class="content"><img src="img/img7.jpg"/>
+              <div class="title">No. <b>517</b> from Picsum</div><a class="close" href="#gallery"></a>
+            </div>
+          </div>
+          </div>
+          <a href="gallery.html"><center><button class="button">
+            View More
+        </button></center></a>
+
+<!-- Facilities Start -->
+<div class="container-fluid pt-5">
+    <div class="container pb-3">
+        <div class="container reveal fade-left">
+            <div class="text-center pb-2">
+                <p class="section-title px-5"><span class="px-2">Our Activities</span></p>
+                <h1 class="mb-4">Extra Curriculum Activities</h1>
+            </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 pb-1">
+                <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                    <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
+                    <div class="pl-4">
+                        <h4>A Day at Work</h4>
+                        <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pb-1">
+                <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                    <i class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"></i>
+                    <div class="pl-4">
+                        <h4>The Music Club</h4>
+                        <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pb-1">
+                <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                    <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
+                    <div class="pl-4">
+                        <h4>Arts club and Poetry</h4>
+                        <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="about.html"><center><button class="button">
+         More Activities
+    </button></center></a>
+
+</div>
+
+ <!-- Blog Start -->
+ <div class="container-fluid pt-5">
+    <div class="container reveal fade-right">
+        <div class="text-center pb-2">
+            <p class="section-title px-5"><span class="px-2">Latest News $ Events</span></p>
+            <h1 class="mb-4">Our News & Event</h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm mb-2">
+                    <img class="card-img-top mb-2" src="img/img10.jpg" alt="">
+                    <div class="card-body bg-light text-center p-4">
+                        <h4 class="">Diam amet eos at no eos</h4>
+                        <div class="d-flex justify-content-center mb-3">
+                            <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
+                            <small class="mr-3"><i class="fa fa-folder text-primary"></i> School Sport</small>
+                            <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
+                        </div>
+                        <p>Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod, duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor ipsum justo amet stet...</p>
+                        <a href="blog.html" class="btn btn-primary px-4 mx-auto my-2">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm mb-2">
+                    <img class="card-img-top mb-2" src="img/img7.jpg" alt="">
+                    <div class="card-body bg-light text-center p-4">
+                        <h4 class="">Diam amet eos at no eos</h4>
+                        <div class="d-flex justify-content-center mb-3">
+                            <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
+                            <small class="mr-3"><i class="fa fa-folder text-primary"></i> Inter-House Sport</small>
+                            <small class="mr-3"><i class="fa fa-comments text-primary"></i> 22</small>
+                        </div>
+                        <p>Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod, duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor ipsum justo amet stet...</p>
+                        <a href="blog.html" class="btn btn-primary px-4 mx-auto my-2">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm mb-2">
+                    <img class="card-img-top mb-2" src="img/img3.jpg" alt="">
+                    <div class="card-body bg-light text-center p-4">
+                        <h4 class="">Diam amet eos at no eos</h4>
+                        <div class="d-flex justify-content-center mb-3">
+                            <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
+                            <small class="mr-3"><i class="fa fa-folder text-primary"></i> Choreography</small>
+                            <small class="mr-3"><i class="fa fa-comments text-primary"></i> 17</small>
+                        </div>
+                        <p>Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod, duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor ipsum justo amet stet...</p>
+                        <a href="blog.html" class="btn btn-primary px-4 mx-auto my-2">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
+    <!-- management Start -->
+    <div class="container-fluid pt-5">
+        <div class="container reaveal fade-left">
+            <div class="text-center pb-2">
+                <p class="section-title px-5"><span class="px-2">Our management</span></p>
+                <h1 class="mb-4">Meet Our management</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 text-center management mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+                        <img class="img-fluid w-100" src="img/profile.jpg" alt="" >
+                        <div
+                            class="management-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <h4>Teacher Name</h4>
+                    <i>Teacher Role</i>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center management mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+                        <img class="img-fluid w-100" src="img/profile.jpg" alt="" >
+                        <div
+                            class="management-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <h4>Teacher Name</h4>
+                    <i>Teacher Role</i>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center management mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+                        <img class="img-fluid w-100" src="img/profile.jpg" alt="" >
+                        <div
+                            class="management-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <h4>Teacher Name</h4>
+                    <i>Teacher Role</i>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center management mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+                        <img class="img-fluid w-100" src="img/profile.jpg" alt="" >
+                        <div
+                            class="management-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+                                href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <h4>Teacher Name</h4>
+                    <i>Teacher Role</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- management End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container p-0 reveal fade-right">
+            <div class="text-center pb-2">
+                <p class="section-title px-5"><span class="px-2"> School Testimonial</span></p>
+                <h1 class="mb-4">What Our Parents Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item px-3">
+                    <div class="bg-light shadow-sm rounded mb-4 p-4">
+                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
+                        Our experience with Sacred Heart Primary School has been absolutely wonderful. 
+                        We are grateful to have found such a fantastic school that prioritizes both academic & personal development.
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img class="rounded-circle" src="img/profile.jpg" style="width: 70px; height: 70px;" alt="Image">
+                        <div class="pl-3">
+                            <h5>David Osagie</h5>
+                            <i>Electrician</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item px-3">
+                    <div class="bg-light shadow-sm rounded mb-4 p-4">
+                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
+                        As parents, we are extremely grateful for the education our child has received at Sacred Heart Academy.
+                        The school's commitment to academic excellence is evident in the passionate and knowledgeable teachers who go above and beyond to challenge and inspire their students.
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img class="rounded-circle" src="img/profile.jpg" style="width: 70px; height: 70px;" alt="Image">
+                        <div class="pl-3">
+                            <h5>Roseline Opaleye</h5>
+                            <i>Tailor</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item px-3">
+                    <div class="bg-light shadow-sm rounded mb-4 p-4">
+                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
+                        We are impressed by the school's dedication to fostering a positive and inclusive atmosphere, 
+                        and we highly recommend Sacred Heart Primary School to any parent seeking a nurturing educational environment.
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img class="rounded-circle" src="img/profile.jpg" style="width: 70px; height: 70px;" alt="Image">
+                        <div class="pl-3">
+                            <h5>Godwin Eneojo Daniel</h5>
+                            <i>Cyber Officer</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item px-3">
+                    <div class="bg-light shadow-sm rounded mb-4 p-4">
+                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
+                        Sacred Heart Primary School has truly prepared our child for success both academically and personally, 
+                        and we couldn't be more proud of their growth and achievements.
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img class="rounded-circle" src="img/profile.jpg" style="width: 70px; height: 70px;" alt="Image">
+                        <div class="pl-3">
+                            <h5>Olukola Bukky Oluwamayowa</h5>
+                            <i>A Nurse</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+   
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5 reveal fade-bottom">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" style="font-size: 40px; line-height: 40px;">
+                    <img src="img/logo2.png" height="70px" width="90px" /><br>
+                    <span class="text-white">Sacred Heart <br>
+                        <h4 style="color: white;" class="animate__animated animate__backInDown animate__delay-20000s">Primary School</h4></span>
+                </a>
+                <p>One of the standout features of Sacred Heart Primary School is its commitment to personalized attention and student support. 
+                    With excellent class sizes, teachers can provide individualized instruction and guidance, 
+                    ensuring that each student's unique needs and learning styles are addressed. 
+                   </p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Get In Touch</h3>
+                <div class="d-flex">
+                    <h4 class="fa fa-map-marker-alt text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Address: </h5>
+                        <p class="animate__animated animate__backInLeft"> 46 independence way Kaduna, Kaduna State
+                            </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <h4 class="fa fa-envelope text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Email: </h5>
+                        <a href="mailto:sacredheartprimaryschkad@gmail.com" style="color: white; margin-right: 10px;"><p>sacredheartprimaryschkad@gmail.com</p></a>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <h4 class="fa fa-phone-alt text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Telephone No: </h5>
+                        <a href="tel:+2348060717501" style="color: white;" class="animate__animated animate__backInRight"><p>+2348060717501
+                        </p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4" style="padding-right: 40px;">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white mb-2" href="class.html"><i class="fa fa-angle-right mr-2"></i>Management</a>
+                    <a class="text-white mb-2" href="blog.html"><i class="fa fa-angle-right mr-2"></i>News & Event</a>
+                    <a class="text-white mb-2" href="gallery.html"><i class="fa fa-angle-right mr-2"></i>Gallery</a>
+                    &nbsp;
+                    &nbsp;
+                    <a class="text-white mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Newsletter</h3>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
+                            required="required" />
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-block border-0 py-3" type="submit">Submit Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
+            <p class="m-0 text-center text-white">
+                &copy; <a class="text-primary font-weight-bold" href="#">Sacred Heart Primary School</a>. All Rights Reserved. 
+				
+				<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+				Designed by <a class="text-primary font-weight-bold" href="https://dannycodess.netlify.app">DannyCodes</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!--  Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Image Slide -->
+    <script src="js/img_scroll.js"></script>
+</body>
+
+</html>
